@@ -1,4 +1,5 @@
 <?php
+    include ("conexao.php");
     $nome =$_POST["nome_usuario"];
     echo "nome: ".$nome;
     echo '<br>';
