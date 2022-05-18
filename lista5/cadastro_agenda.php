@@ -31,8 +31,8 @@
     echo "data do cadastro: ".$dt_cadastro;
     echo '<br>';
 
-    $sql = "INSERT INTO usuario (nome, apelido, endereço, bairro, cidade, estado, telefone, celular, email, dt_cadastro)
-            VALUES ('".$nome."', '".$apelido."', '".$endereco."', '".$bairro."', '".$cidade."', '".$estado."', '".$telefone."', '".$email."', '".$dt_cadastro."')";
+    $sql = "INSERT INTO agenda (nome, apelido, endereço, bairro, cidade, estado, telefone, celular, email, dt_cadastro)
+            VALUES ('".$nome."', '".$apelido."', '".$endereco."', '".$bairro."', '".$cidade."', '".$estado."', '".$telefone."', '".$celular."', '".$email."', '".$dt_cadastro."')";
 
     $result = mysqli_query($con, $sql);
     if($result)
