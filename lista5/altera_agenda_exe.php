@@ -16,16 +16,18 @@
     echo "<p> Nome Usuário: " . $nome . "<p>";    
 	
 	$sql = "UPDATE agenda SET
-            nome_usuario='".$nome."',
-            apelido_usuario='".$apelido."',
-            endereco_usuario='".$endereco."',
-            cidade_usuario='".$cidade."',
-            estado_usuario='".$estado."',
-            telefone_usuario='".$telefone."'
-            celular_usuario='".$celular."',
-            email_usuario='".$email."',
+            nome='".$nome."',
+            apelido='".$apelido."',
+            endereço='".$endereco."',
+            cidade='".$cidade."',
+            estado='".$estado."',
+            telefone='".$telefone."',
+            celular='".$celular."',
+            email='".$email."',
             dt_cadastro='".$dt_cadastro."'
-          WHERE id_usuario=".$id_agenda;
+          WHERE id_agenda=".$id_agenda;
+
+         
 	    
 	$result = mysqli_query($con, $sql);
 	if($result)
