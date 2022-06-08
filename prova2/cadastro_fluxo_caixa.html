@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+    <form action="cadastro_fluxo_caixa.php" method="post" enctype='multipart/form-data'>
+      <div>
+      <h3>Cadastro Fluxo Caixa - IFSP</h3>
+      <fieldset>
+      <label for="date">Data: </label>
+      <input type="text" size="50" name="date" id="date">
+      <br>
+      </fieldset>
+      </div>
+      <div>
+        <label for="tipo">Tipo: </label>
+        <input type="radio"  name="tipo" value="0">
+        <label for="entrada">entrada</label>
+        <input type="radio"  name="tipo" value="1">
+        <label for="saida">saida</label>
+      </div>
+      <div>
+            <fieldset>
+            <label for="valor">Valor: </label>
+            <input type="text" size="50" name="valor" id="valor">
+            <br>
+            <label for="historico">historico: </label>
+            <input type="text" size="50" name="historico" id="historico">
+            </fieldset>
+      </div> 
+      <div>
+        <label for="Cheque">Cheque: </label>
+        <input type="radio"  name="cheque" value="0">
+        <label for="sim">sim</label>
+        <input type="radio"  name="cheque" value="1">
+        <label for="nao">nao</label>
+      </div>
+     <div>
+        <fieldset>
+        <br><div id="botao">
+        <button type="submit">Enviar</button>
+        </fieldset>
+      </div>
+      </div>
+    </form>
+</body>
+</html>

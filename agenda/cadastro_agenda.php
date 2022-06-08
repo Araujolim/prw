@@ -48,8 +48,8 @@
     echo "data do cadastro: ".$dt_cadastro;
     echo '<br>';
 
-    $sql = "INSERT INTO agenda (nome, apelido, endereço, bairro, cidade, estado, telefone, celular, email, dt_cadastro)
-            VALUES ('".$nome."', '".$apelido."', '".$endereco."', '".$bairro."', '".$cidade."', '".$estado."', '".$telefone."', '".$celular."', '".$email."', '".$dt_cadastro."')";
+    $sql = "INSERT INTO agenda (nome, apelido, endereço, bairro, cidade, estado, telefone, celular, email, dt_cadastro, foto_blob, foto_nome)
+            VALUES ('".$nome."', '".$apelido."', '".$endereco."', '".$bairro."', '".$cidade."', '".$estado."', '".$telefone."', '".$celular."', '".$email."', '".$dt_cadastro."', '".$fotoBlob."','".$fotoNome."')";
 
     $result = mysqli_query($con, $sql);
     if($result)
