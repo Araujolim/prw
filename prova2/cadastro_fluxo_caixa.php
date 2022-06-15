@@ -1,19 +1,20 @@
 <?php
     include ("conexao.php");
     $data =$_POST["date"];
-    echo "nome: ".$data;
+    echo '<br>';
+    echo "Data: ".$data;
     echo '<br>';
     $tipo =$_POST["tipo"];
-    echo "email: ".$tipo;
+    echo "Tipo: ".$tipo;
     echo '<br>';
     $valor =$_POST["valor"];
-    echo "telefone: ".$valor;
+    echo "Valor: ".$valor;
     echo '<br>';
     $historico =$_POST["historico"];
-    echo "telefone: ".$historico;
+    echo "Histórico: ".$historico;
     echo '<br>';
     $cheque =$_POST["cheque"];
-    echo "telefone: ".$cheque;
+    echo "Cheque: ".$cheque;
     echo '<br>';
 
     $sql = "INSERT INTO fluxo_caixa (date, tipo, valor, historico, cheque)

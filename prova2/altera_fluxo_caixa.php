@@ -18,7 +18,7 @@
 <body>
     <h1>Cadastro Fluxo Caixa - IFSP</h1>
     <div id="teste">
-        <form method="post" action="altera_fluxo_caixa_exe.php">
+        <form method="post" action="altera_fluxo_caixa_exe.php" enctype='multipart/form-data'>
             <fieldset>
                 <legend>Cadastro</legend>
                 <div class="form-item">

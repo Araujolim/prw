@@ -12,15 +12,15 @@
       <h3>Cadastro Fluxo Caixa - IFSP</h3>
       <fieldset>
       <label for="date">Data: </label>
-      <input type="text" size="50" name="date" id="date">
+      <input type="date" size="50" name="date" id="date">
       <br>
       </fieldset>
       </div>
       <div>
-        <label for="tipo">Tipo: </label>
-        <input type="radio"  name="tipo" value="0">
+        <label for="tipo1">Tipo: </label>
+        <input type="radio"  name="tipo" value="entrada">
         <label for="entrada">entrada</label>
-        <input type="radio"  name="tipo" value="1">
+        <input type="radio"  name="tipo" value="saida">
         <label for="saida">saida</label>
       </div>
       <div>
@@ -33,11 +33,11 @@
             </fieldset>
       </div> 
       <div>
-        <label for="Cheque">Cheque: </label>
-        <input type="radio"  name="cheque" value="0">
-        <label for="sim">sim</label>
-        <input type="radio"  name="cheque" value="1">
-        <label for="nao">nao</label>
+        <label for="tipo">Cheque: </label>
+          <select name="cheque" id="cheque">
+            <option value="sim">sim</option>
+            <option value="nao">não</option>
+          </select>
       </div>
      <div>
         <fieldset>
