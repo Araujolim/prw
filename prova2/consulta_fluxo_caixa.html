@@ -5,22 +5,28 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <style>
+    fieldset {
+      width: 500px;
+    }
+  </style>
 </head>
 <body>
     <form action="consulta_fluxo_caixa.php" method="post" enctype='multipart/form-data'>
       <div>
       <h3>Consulta Fluxo Caixa - IFSP</h3>
+      <fieldset>
       <div>
-        <label for="tipo_consulta">Tipo de consulta: </label>
-        <input type="radio"  name="tipo_consulta" value="0">
+        <label for="tipo">Tipo de consulta: </label>
+        <input type="radio"  name="tipo" value="saldo">
         <label for="entrada">Saldo total</label>
-        <input type="radio"  name="tipo_consulta" value="1">
-        <label for="saida">Total saÍdas</label>
-        <input type="radio"  name="tipo_consulta" value="2">
+        <input type="radio"  name="tipo" value="saida">
+        <label for="saida">Total saídas</label>
+        <input type="radio"  name="tipo" value="entrada">
         <label for="saida">Total entradas</label>
       </div>
      <div>
-        <fieldset>
+  
         <br><div id="botao">
         <button type="submit">Enviar</button>
         </fieldset>
